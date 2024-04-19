@@ -1,0 +1,88 @@
+/* Content banner
+.banner {
+    margin-bottom: -60px;
+}
+
+.banner-background {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../image/banner/banner1.png);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 16px;
+}
+
+.banner-background .banner-text {
+    position: absolute;
+    
+    left: 50%;
+    
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.banner-background .banner-text {
+    width: 50%;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.banner .search-option {
+    z-index: 1;
+    bottom: 115px;
+}
+
+.search-option {
+    position: relative;
+}
+
+.search-option .option {
+    display: flex;
+    margin: auto;
+    width: 25%;
+    border-radius: 16px 16px 0 0;
+}
+
+.option .option-item {
+    width: 100%;
+}
+
+.search-option .search {
+    width: 92%;
+    display: flex;
+    margin: auto;
+    top: 56px;
+    border-radius: 16px;
+}
+
+.search-text {
+    color: var(--gray-color);
+    margin-bottom: 8px;
+}
+
+.search-value {
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.search-time {
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-search .btn {
+    width: 100%;
+}
+
+.car-option__icon {
+    font-size: 1.4rem;
+} */

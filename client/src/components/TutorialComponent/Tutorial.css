@@ -1,0 +1,61 @@
+.tutorial-container .tutorial-item__img {
+    height: 230px;
+}
+
+.tutorial-container .tutorial-item__title {
+    height: 4.5rem;
+}
+
+.ttr-number {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.tutorial-section {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 576px) {
+    .tutorial-container .tutorial-item {
+        width: 50%;
+    }
+
+    .tutorial-container .tutorial-item__img {
+        height: 180px;
+    }
+
+    .tutorial-container .tutorial-item__title {
+        height: 3.5rem;
+        margin: 0 auto;
+    }
+    .ttr-number {
+        color: violet;
+    }
+
+    .tutorial-container .tutorial-item__title h4 {
+        font-size: 1rem;
+    }
+
+    .footer-container .footer-info {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    /* footer */
+    .footer-info .footer-info__logo {
+        width: 100px;
+    }
+
+    .footer-container .footer-contact {
+        width: 50%;
+    }
+
+    .footer-contact .footer-title {
+        font-size: 1rem;
+    }
+
+    .phone-mail p,
+    .footer-contact .footer-link,
+    .company-address p {
+        font-size: 0.875rem;
+    }
+}

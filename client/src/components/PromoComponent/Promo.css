@@ -1,0 +1,72 @@
+.item-promo .fix-img {
+    height: 276px;
+}
+
+.slick-prev, .slick-next {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.container {
+    position: relative;
+}
+
+.promo-prev {
+    left: -1%;
+    
+}
+
+.promo-next {
+    left: 97.6%;
+}
+
+.promo-prev, .promo-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+    border: 0;
+}
+
+.promo-prev .promo-icon,
+.carousel-prev .carousel-icon,
+.airport-prev .airport-icon {
+    /* color: white; */
+    /* font-size: 25px;
+    margin: 0px 6px 0px 2px; */
+    display: flex;
+    justify-content: center;
+    opacity: 0.35;
+}
+
+.promo-next .promo-icon,
+.carousel-next .carousel-icon,
+.airport-next .airport-icon {
+    /* color: white; */
+    /* font-size: 25px;
+    margin: 0px 2px 0px 6px; */
+    display: flex;
+    justify-content: center;
+    opacity: 0.35;
+}
+
+/* .img-fluid {
+    width: 100%;
+    height: 275px;
+} */

@@ -1,0 +1,39 @@
+.insurance-slider .slick-slider {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .insurance-slider .slick-slider {
+        display: block;
+    }
+    .insurance-container {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .insurance-slider .slick-slider {
+        display: block;
+    }
+    .insurance-container {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .insurance-slider .slick-slider {
+        display: block;
+    }
+    .insurance-container {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .insurance-slider .slick-slider {
+        display: block;
+    }
+    .insurance-container {
+        display: none;
+    }
+}

@@ -1,0 +1,197 @@
+.info-car-desc h6 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.info-car-desc h5{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.info-car-desc p,
+.outstanding-features p {
+    margin-bottom: 6px;
+    text-align: justify;
+    font-size: 14px;
+    /* font-weight: 400; */
+}
+
+.name-car h3, .order-car__box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.name-car h3{
+    margin-top: 12px;
+}
+
+.content-detail {
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.content-detail__box {
+    margin: 0px 16px;
+}
+
+.content-detail img {
+    width: 100%;
+    height: 550px;
+}
+
+.order-car {
+    height: 100%;
+    background-color: #f7fbff;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.order-car__box {
+        margin: 16px 16px 0px 8px;
+}
+
+.order-car__box h6{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.content-detail .info-car{
+    display: flex;
+    padding-bottom: 16px;
+    /* justify-content: center;
+    gap: 20px; */
+}
+
+/* .content-detail .info-car .car-img {
+    width: 70%;
+} */
+
+.content-detail .info-car .name-car {
+    /* width: 30%; */
+    margin: auto;
+}
+
+.detail-car .info-car-desc {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+    scroll-margin-top: 110px;
+}
+
+.required-papers {
+    display: flex;
+    grid-gap: 24px;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 16px 24px;
+    background: #fef7f4;
+    border-left: 8px solid #f26a2b;
+    border-radius: 8px;
+}
+
+.required-papers .required-papers__item {
+    width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.required-papers .required-papers__item .type__item {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+.required-papers .required-papers__item .type__item p {
+    font-weight: 500;
+    color: #666;
+}
+
+.required-papers .required-papers__item .type-content {
+    display: flex;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.required-papers .required-papers__item .type-content img {
+    width: 24px;
+    height: 24px;
+}
+
+.detail-car .order-car .price-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.detail-car .order-car .price-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-car .order-car .btn-order {
+    margin-top: 24px;
+}
+
+.detail-car .order-car .price-item p {
+    margin-bottom: 0px;
+}
+
+.detail-car .order-car .price-container .price-item p.cost {
+    color: #000;
+    font-weight: 600;
+}
+
+.surcharge {
+    margin: 24px 0px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.surcharge p.title {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.surcharge .surcharge-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+    gap: 12px;
+}
+
+.surcharge .surcharge-container .surcharge-item {
+    display: flex;
+    font-size: .75rem;
+    line-height: 16px;
+    grid-gap: 12px;
+    gap: 12px;
+}
+
+.surcharge .surcharge-container .surcharge-item .content {
+    display: flex;
+    grid-gap: 4px;
+    gap: 4px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.surcharge .surcharge-container .surcharge-item .content .content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.surcharge .surcharge-container .surcharge-item .content .content-item p {
+    text-align: justify;
+}

@@ -1,0 +1,75 @@
+/* Địa điểm nổi bật */
+.airport-item{
+    text-decoration: none;
+}
+
+.airport-card {
+    border-radius: 24px;
+    color: black;
+}
+
+.airport-btn {
+    margin-top: 60px;
+}
+
+.carousel-prev , .carousel-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: 68%;
+}
+
+.airport-prev, .airport-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-prev {
+    left: -11px;
+}
+
+.carousel-next{
+    left: 97.6%;
+}
+
+img.airport-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 16px;
+}
+/* .promo-container .carousel-item img {
+    height: 300px;
+}
+
+.airport-slide .airport-header {
+    position: relative;
+    padding-left: 0;
+}
+
+.airport-btn {
+    width: 80%;
+    position: absolute;
+    top: 70%;
+}
+
+.promo-prev,
+.promo-next,
+.airport-prev,
+.airport-next {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    /* background-color: red; 
+}
+
+.airport-img {
+    width: 36% !important;
+    height: 100px !important;
+    margin-top: 12px;
+} */
+/* Địa điểm nổi bật kết thúc */

@@ -1,0 +1,236 @@
+.service-container {
+    position: relative;
+}
+
+/* .service-container .service-container {
+    display: flex;
+    justify-content:end;
+} */
+
+/* .service-item.right {
+    position: absolute;
+    right: 0;
+} */
+
+.service-item .service-item__img {
+    position: relative;
+}
+
+.service-item {
+    position: relative;
+}
+
+.service-item.right {
+    position: absolute;
+    right: 0;
+}
+
+.service-item .service-item__img img {
+    width: 686px;
+    height: 520px;
+}
+
+.service-item .service-item__content {
+    width: 500px;
+}
+
+.service-item .service-item__content {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    color: white;
+}
+
+.service-item.right .service-item__content {
+    position: absolute;
+    left: 21.5%;
+    top: 61.5%;
+}
+
+.sv-slide .slick-slider {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+
+    .explorer-item .explorer-title {
+    margin-top: 0px;
+}
+.p-60 {
+    padding: 24px 12px;
+}
+.explorer-item .explorer-title {
+    font-size: 2rem;
+}
+    .service-item {
+        position: relative !important;
+        /* right: 0 !important; */
+    }
+    .service-item .service-item__content {
+    /* position: absolute; */
+    top: 61%;
+    left: 3%;
+    /* color: white; */
+}
+.service-item.right .service-item__content {
+        /* position: absolute; */
+        left: 43.5%;
+        top: 66.5%;
+        /* right: 0; */
+        /* margin-left: 180px; */
+        /* margin-top: 58px; */
+    }
+    .service-item .service-item__img img {
+    width: 100%;
+    height: 420px;
+}
+.service-item .service-item__content {
+        width: 300px;
+    }
+
+.service-item__content h1 {
+        font-size: 20px;
+    }
+    .service-item__content p {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+    .service-item {
+        position: relative !important;
+        /* right: 0 !important; */
+    }
+    .service-item .service-item__img img {
+        width: 100%; /*516px*/
+        height: 400px;
+    }
+    .service-item .service-item__content {
+        /* position: absolute; */
+        top: 59%;
+        left: 3%;
+        /* color: white; */
+    }
+    .service-item.right .service-item__content {
+        /* position: absolute; */
+        left: 39.5%;
+        top: 65%;
+        /* right: 0; */
+        /* margin-left: 180px; */
+        /* margin-top: 58px; */
+    }
+    .service-item .service-item__content {
+        width: 300px;
+    }
+    .service-item__content h1 {
+        font-size: 20px;
+    }
+    .service-item__content p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-item .service-item__img img {
+        width: 388px;
+        height: 300px;
+    }
+
+    .service-item .service-item__content {
+        width: 260px;
+    }
+
+    .service-item .service-item__content h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-item .service-item__content p {
+        font-size: 0.8rem;
+    }
+
+    .service-item .service-item__content .btn-service {
+        padding: 8px 0 !important;
+    }
+
+    .service-item .service-item__content {
+        top: 38%;
+        left: 4%;
+    }
+
+    .service-item.right .service-item__content {
+        left: 29%;
+        top: 59%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .service-item .service-item__img img {
+        width: 525px;
+        height: 405px;
+    }
+
+    .service-item .service-item__content {
+        width: 450px;
+    }
+
+    .service-item .service-item__content {
+        top: 35%;
+        left: 3%;
+    }
+
+    .service-item .service-item__content h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 8px;
+    }
+
+    .service-item .service-item__content p {
+        margin-bottom: 20px;
+    }
+
+    .service-item.right .service-item__content {
+        left: 11%;
+        top: 56%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .service-item .service-item__img img {
+        width: 625px;
+        height: 485px;
+    }
+
+    .service-item .service-item__content {
+        top: 42%;
+    }
+
+    .service-item.right .service-item__content {
+        left: 14.5%;
+        top: 60.5%;
+    }
+}
+
+

@@ -1,0 +1,1165 @@
+/* Header */
+nav {
+    top: 0;
+    box-shadow: 0px 13px 24px 0px rgba(0, 0, 0, 0.08);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+nav .navbar-collapse.collapse {
+    display: block;
+}
+
+nav .navbar-collapse {
+    transition: 0.6s all ease-in-out;
+    height: 0 !important;
+}
+
+.header .navbar {
+    height: 88px;
+}
+
+.header .logo-lg {
+    height: 60px;
+}
+
+.header .logo-sm {
+    height: 36px;
+}
+
+.navbar-collapse {
+    z-index: 1;
+    background-color: violet;
+    border-radius: 12px;
+}
+
+.header .nav-link {
+    color: black;
+    font-size: 1.05rem;
+}
+
+.header .vr {
+    height: 1.5rem;
+    margin-top: 10px;
+}
+
+.account-btn {
+    display: flex;
+}
+/* Head end */
+
+/* Banner */
+.banner {
+    margin-bottom: -60px;
+}
+
+.banner-background {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../../image/banner/banner1.png);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 16px;
+}
+
+.banner-background .banner-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-background .banner-text {
+    width: 50%;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.banner .search-option {
+    z-index: 1;
+    bottom: 115px;
+}
+
+.search-option {
+    position: relative;
+}
+
+.search-option .option {
+    display: flex;
+    margin: auto;
+    width: 25%;
+    border-radius: 16px 16px 0 0;
+}
+
+.option .option-item {
+    width: 100%;
+}
+
+.search-option .search {
+    width: 92%;
+    display: flex;
+    margin: auto;
+    top: 56px;
+    border-radius: 16px;
+}
+
+.search-text {
+    color: var(--gray-color);
+    margin-bottom: 8px;
+}
+
+.search-value {
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.search-time {
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn-search .btn {
+    width: 100%;
+}
+
+.car-option__icon {
+    font-size: 1.4rem;
+}
+/* Banner end */
+
+/* Promo */
+.item-promo .fix-img {
+    height: 276px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.slick-slide > div {
+    margin: 0 10px !important;
+}
+
+.slick-list {
+    margin: 0 -10px !important;
+}
+
+.container {
+    position: relative;
+}
+
+.promo-prev {
+    left: -1%;
+}
+
+.promo-next {
+    left: 97.6%;
+}
+
+.promo-prev,
+.promo-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+    border: 0;
+}
+
+.promo-prev .promo-icon,
+.carousel-prev .carousel-icon,
+.airport-prev .airport-icon {
+    display: flex;
+    justify-content: center;
+    opacity: 0.35;
+}
+
+.promo-next .promo-icon,
+.carousel-next .carousel-icon,
+.airport-next .airport-icon {
+    display: flex;
+    justify-content: center;
+    opacity: 0.35;
+}
+/* Promo end */
+
+/* Car */
+p {
+    margin: 0 !important;
+}
+
+.btn-service {
+    margin-top: 20px;
+}
+
+.item-car.card,
+.item-promo.card,
+.item-place.card,
+.item-airport.card,
+.item-adv.card,
+.item-blog.card,
+.item-ins.card {
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.item-box {
+    margin: 8px;
+}
+
+.item-car .item-box .img-car {
+    position: relative;
+}
+
+.item-car .item-box .img-car .fix-img,
+.item-promo .fix-img,
+.item-place .fix-img,
+.item-blog .fix-img,
+.item-ins .fix-img {
+    border-radius: 12px;
+}
+
+.item-car .item-box .img-car .fix-img {
+    height: 200px;
+}
+
+.label-pos {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    font-size: 0.625rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.label-pos span.rent {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    grid-gap: 2px;
+    gap: 2px;
+}
+
+.label-pos span {
+    padding: 4px 8px;
+    border-radius: 100px;
+    background: rgba(12, 12, 12, 0.5);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.desc-car {
+    margin-top: 20px;
+}
+
+span.tag-item {
+    background: #eef7ff;
+}
+
+span.tag-item {
+    color: #262626;
+    padding: 4px 8px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0 8px 8px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.desc-name {
+    margin-top: 8px;
+    display: flex;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+.item-car .item-box .desc-car .desc-name p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-car .item-box .desc-car .desc-address {
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    grid-gap: 6px;
+    gap: 6px;
+    color: #767676;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.item-car .item-box .desc-car .desc-info-price {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.hr {
+    border: 1px solid #eee;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.item-car .item-box .desc-car .desc-info-price .info {
+    display: flex;
+    align-items: center;
+    color: #767676;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 16px;
+    grid-gap: 3px;
+    gap: 3px;
+}
+
+.wrap-icon {
+    /* line-height: 0; */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+span.dot {
+    font-size: 4px;
+    padding: 0 3px;
+}
+
+.car-slide .slick-slider {
+    display: none;
+}
+/* Car end */
+
+/* Service */
+.service-container {
+    position: relative;
+}
+
+.service-item .service-item__img {
+    position: relative;
+}
+
+.service-item {
+    position: relative;
+}
+
+.service-item.right {
+    position: absolute;
+    right: 0;
+}
+
+.service-item .service-item__img img {
+    width: 686px;
+    height: 520px;
+}
+
+.service-item .service-item__content {
+    width: 500px;
+}
+
+.service-item .service-item__content {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    color: white;
+}
+
+.service-item.right .service-item__content {
+    position: absolute;
+    left: 21.5%;
+    top: 61.5%;
+}
+
+.sv-slide .slick-slider {
+    display: none;
+}
+/* Service end*/
+
+@media (max-width: 480px) {
+    .p-60 {
+        padding: 32px 12px !important;
+    }
+    .pt-48 {
+        padding-top: 26px;
+    }
+
+    nav .navbar-collapse.collapse {
+        overflow: hidden;
+    }
+
+    nav .navbar-collapse.active {
+        height: 30vh !important;
+    }
+    .navbar-nav .nav-item,
+    .account-btn {
+        padding: 0px 20px;
+    }
+
+    div .nav-hr {
+        margin: 0 20px;
+    }
+
+    .account-btn {
+        display: block;
+    }
+    .header .navbar {
+        height: 56px;
+    }
+
+    .slick-slide > div {
+        margin: 0 5px !important;
+    }
+
+    .slick-list {
+        /* margin-right: 5px;
+    margin-left: 5px; */
+        margin: 0 -3px !important;
+    }
+
+    /* Banner */
+    .banner-background {
+        height: 380px;
+        /* margin: 16px 0; */
+    }
+
+    .banner-background .banner-text {
+        width: 88%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .option .option-item {
+        width: 100%;
+    }
+
+    .search-option .option {
+        width: 92%;
+    }
+
+    .search-option .search {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    .search-value {
+        font-size: 0.9rem;
+    }
+
+    div .vr-1,
+    div .vr-2 {
+        display: none;
+    }
+    /* Banner end */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 200px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .featured-container {
+        display: none !important;
+    }
+    .car-slide .slick-slider {
+        display: block;
+    }
+
+    .item-car .item-box .img-car .fix-img {
+        height: 300px;
+    }
+    /* Car end */
+
+    .item-adv.card {
+        width: 400px;
+        margin: auto;
+    }
+    /* Service */
+    .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .container .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+
+    .explorer-item .explorer-title {
+        margin-top: 0px;
+    }
+    .p-60 {
+        padding: 24px 12px;
+    }
+    .explorer-item .explorer-title {
+        font-size: 2rem;
+    }
+    .service-item {
+        position: relative !important;
+    }
+    .service-item .service-item__content {
+        top: 51%;
+        left: 3%;
+    }
+    .service-item.right .service-item__content {
+        left: 28.5%;
+        top: 57.5%;
+    }
+    .service-item .service-item__img img {
+        width: 100%;
+        height: 342px;
+    }
+    .service-item .service-item__content {
+        width: 300px;
+    }
+
+    .service-item__content h1 {
+        font-size: 20px;
+    }
+    .service-item__content p {
+        font-size: 12px;
+    }
+    /* Service end*/
+
+    .blog-item .blog-content__img img{
+    height: 286px !important;}
+}
+@media (min-width: 480px) and (max-width: 576px) {
+    nav .navbar-collapse.collapse {
+        overflow: hidden;
+    }
+
+    nav .navbar-collapse.active {
+        height: 68vh !important;
+    }
+
+    .navbar-nav .nav-item,
+    .account-btn {
+        padding: 0px 20px;
+    }
+
+    div .nav-hr {
+        margin: 0 20px;
+    }
+
+    .account-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        height: 56px;
+    }
+
+    /* Banner */
+    .banner-background {
+        height: 450px;
+        padding: 32px 0;
+    }
+
+    .banner-background .banner-text {
+        width: 65%;
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+    }
+
+    .option .option-item {
+        width: 100%;
+    }
+
+    .search-option .option {
+        width: 92%;
+    }
+
+    .search-option .search {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    .search-value {
+        font-size: 0.9rem;
+    }
+
+    div .vr-1,
+    div .vr-2 {
+        display: none;
+    }
+    /* Banner end */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 152px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .featured-container {
+        display: none !important;
+    }
+    .car-slide .slick-slider {
+        display: block;
+    }
+    /* Car end */
+
+    .item-adv.card {
+        width: 400px;
+        margin: auto;
+    }
+
+    /* service */
+    .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .container .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+
+    .explorer-item .explorer-title {
+        margin-top: 0px;
+    }
+    .p-60 {
+        padding: 24px 12px;
+    }
+    .explorer-item .explorer-title {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        position: relative !important;
+    }
+    .service-item .service-item__content {
+        top: 61%;
+        left: 3%;
+    }
+    .service-item.right .service-item__content {
+        left: 43.5%;
+        top: 66.5%;
+    }
+    .service-item .service-item__img img {
+        width: 100%;
+        height: 420px;
+    }
+    .service-item .service-item__content {
+        width: 300px;
+    }
+
+    .service-item__content h1 {
+        font-size: 20px;
+    }
+    .service-item__content p {
+        font-size: 12px;
+    }
+    /* service */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    nav .navbar-collapse.collapse {
+        overflow: hidden;
+    }
+
+    nav .navbar-collapse.active {
+        height: 68vh !important;
+    }
+
+    .navbar-nav .nav-item,
+    .account-btn {
+        padding: 0px 20px;
+    }
+
+    div .nav-hr {
+        margin: 0 20px;
+    }
+
+    .account-btn {
+        display: block;
+    }
+
+    /* Banner */
+    .banner-background {
+        height: 450px;
+    }
+
+    .banner-background .banner-text {
+        width: 80%;
+        font-size: 2.5rem;
+        line-height: 3.8rem;
+    }
+
+    .search-option .option {
+        width: 92%;
+    }
+
+    .search-option .search {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    div .vr-1,
+    div .vr-2 {
+        display: none;
+    }
+    /* Banner */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 176px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .item-car .item-box .img-car .fix-img {
+        height: 230px !important;
+    }
+
+    .featured-container {
+        display: none !important;
+    }
+    .car-slide .slick-slider {
+        display: block;
+    }
+    /* Car end */
+
+    /* Place */
+    .airport-btn {
+        /* margin-top: 30px !important; */
+        display: flex;
+    }
+
+    h2.airport-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    /* Place end */
+
+    /* service */
+    /* .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+
+    .explorer-item .explorer-title {
+        margin-top: 0px;
+    }
+    .p-60 {
+        padding: 24px 12px;
+    }
+    .explorer-item .explorer-title {
+        font-size: 2rem;
+    } */
+
+    /* service */
+    .btn {
+        width: 40%;
+        padding: 9px 0 !important;
+        font-size: 14px;
+    }
+    .container .service-container {
+        display: none !important;
+    }
+    .sv-slide .slick-slider {
+        display: block;
+    }
+    .service-item {
+        position: relative !important;
+        /* right: 0 !important; */
+    }
+    .service-item .service-item__img img {
+        width: 100%; /*516px*/
+        height: 400px;
+    }
+    .service-item .service-item__content {
+        /* position: absolute; */
+        top: 59%;
+        left: 3%;
+        /* color: white; */
+    }
+    .service-item.right .service-item__content {
+        /* position: absolute; */
+        left: 39.5%;
+        top: 65%;
+        /* right: 0; */
+        /* margin-left: 180px; */
+        /* margin-top: 58px; */
+    }
+    .service-item .service-item__content {
+        width: 300px;
+    }
+    .service-item__content h1 {
+        font-size: 20px;
+    }
+    .service-item__content p {
+        font-size: 12px;
+    }
+    /* service end */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav .navbar-collapse.collapse {
+        overflow: hidden;
+    }
+
+    nav .navbar-collapse.active {
+        height: 60vh !important;
+    }
+
+    .navbar-nav .nav-item,
+    .account-btn {
+        padding: 0px 20px;
+    }
+
+    .header .nav-link {
+        font-size: 14px;
+    }
+
+    .header .logo-sm {
+        height: 50px;
+    }
+
+    /* Banner */
+    .banner-background {
+        height: 520px;
+    }
+
+    .banner-background .banner-text {
+        width: 70%;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .search-option .option {
+        width: 45%;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    .search-form .vr {
+        height: 77px;
+    }
+
+    div .vr-1,
+    div .vr-2 {
+        display: none;
+    }
+    /* Banner */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 188px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .item-car .item-box .img-car .fix-img {
+        height: 238px !important;
+    }
+    /* Car end */
+
+    /* Place */
+    h2.airport-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    /* service */
+    .service-item .service-item__img img {
+        width: 388px;
+        height: 300px;
+    }
+
+    .service-item .service-item__content {
+        width: 260px;
+    }
+
+    .service-item .service-item__content h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-item .service-item__content p {
+        font-size: 0.8rem;
+    }
+
+    .service-item .service-item__content .btn-service {
+        padding: 8px 0 !important;
+    }
+
+    .service-item .service-item__content {
+        top: 38%;
+        left: 4%;
+    }
+
+    .service-item.right .service-item__content {
+        left: 29%;
+        top: 59%;
+    }
+    /* service end */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav .navbar-collapse.collapse {
+        overflow: hidden;
+    }
+
+    nav .navbar-collapse.active {
+        height: 60vh !important;
+    }
+
+    .navbar-nav .nav-item,
+    .account-btn {
+        padding: 0px 20px;
+    }
+
+    .header .nav-link {
+        font-size: 14px;
+    }
+
+    .header .logo-sm {
+        height: 50px;
+    }
+
+    /* Banner */
+    .banner-background {
+        height: 520px;
+    }
+
+    .banner-background .banner-text {
+        width: 70%;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .search-option .option {
+        width: 45%;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    .search-form .vr {
+        height: 77px;
+    }
+
+    div .vr-1,
+    div .vr-2 {
+        display: none;
+    }
+    /* Banner */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 188px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .item-car .item-box .img-car .fix-img {
+        height: 238px !important;
+    }
+    /* Car end */
+
+    /* Place */
+    h2.airport-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    /* .slick-slider {
+        margin-right: 0;
+        margin-left: -10px;
+    } */
+    /* Place end */
+
+    /* service */
+    .service-item .service-item__img img {
+        width: 388px;
+        height: 300px;
+    }
+
+    .service-item .service-item__content {
+        width: 260px;
+    }
+
+    .service-item .service-item__content h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-item .service-item__content p {
+        font-size: 0.8rem;
+    }
+
+    .service-item .service-item__content .btn-service {
+        padding: 8px 0 !important;
+    }
+
+    .service-item .service-item__content {
+        top: 38%;
+        left: 4%;
+    }
+
+    .service-item.right .service-item__content {
+        left: 29%;
+        top: 59%;
+    }
+    /* service end */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Banner */
+    .banner-background {
+        height: 560px;
+    }
+
+    .banner-background .banner-text {
+        width: 69%;
+        font-size: 3.5rem;
+        line-height: 5.5rem;
+    }
+
+    .search-option .option {
+        width: 33%;
+    }
+
+    .search-form__item {
+        margin-bottom: 24px;
+    }
+
+    .search-form .vr {
+        height: 77px;
+    }
+
+    div .vr.vr-1 {
+        display: none;
+    }
+    /* Banner */
+
+    /* Promo */
+    .item-promo .fix-img {
+        height: 200px !important;
+    }
+    /* Promo end */
+
+    /* Place */
+    h2.airport-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    /* Place end */
+
+    /* service */
+    .service-item .service-item__img img {
+        width: 525px;
+        height: 405px;
+    }
+
+    .service-item .service-item__content {
+        width: 450px;
+    }
+
+    .service-item .service-item__content {
+        top: 35%;
+        left: 3%;
+    }
+
+    .service-item .service-item__content h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 8px;
+    }
+
+    .service-item .service-item__content p {
+        margin-bottom: 20px;
+    }
+
+    .service-item.right .service-item__content {
+        left: 11%;
+        top: 56%;
+    }
+    /* service end */
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* Promo */
+    .item-promo .fix-img {
+        height: 240px !important;
+    }
+    /* Promo end */
+
+    /* Car */
+    .item-car .item-box .img-car .fix-img {
+        height: 252px !important;
+    }
+    /* Car end */
+
+    /* service */
+    .service-item .service-item__img img {
+        width: 625px;
+        height: 485px;
+    }
+
+    .service-item .service-item__content {
+        top: 42%;
+    }
+
+    .service-item.right .service-item__content {
+        left: 14.5%;
+        top: 60.5%;
+    }
+    /* service end */
+}
