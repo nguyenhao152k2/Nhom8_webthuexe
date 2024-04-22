@@ -34,7 +34,7 @@ var Products = require('../models/ProductModel');
 
 const get_list = (req, res) => {
     Products.get_all((data) => {
-        res.send({ result: data });
+        res.send({ data });
     })
 };
 

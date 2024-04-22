@@ -19,17 +19,17 @@ import './components/HeaderComponent/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DefaultComponent from './components/DefaultComponent/DefaultComponent';
 import axios from 'axios';
-import { Api } from './api/api.js';
+// import { Api } from './api/api.js';
 
 function App() {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get('http://localhost:3001/api/products')
-      .then((res) => setData(res.data))
-          .catch((err) => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get('http://localhost:3001/api/products')
+  //     .then((res) => console.log(res.data))
+  //         .catch((err) => console.log(err));
+  // }, []);
   return (
     <div className='App'>
           <Router>

@@ -83,35 +83,51 @@
 // }
 const db = require('../database/connectdb');
 const Products = (products) => {
-    this.id = products.id;
+    this.id_xe = products.id_xe;
+    this.id_khachhang = products.id_khachhang;
+    this.hinhanh = products.hinhanh;
     this.tenxe = products.tenxe;
     this.socho = products.socho;
     this.mota = products.mota;
+    this.giaxe = products.giaxe;
+    this.hopso = products.hopso;
+    this.dungtich = products.dungtich;
+    this.nhienlieu = products.nhienlieu;
+    this.nhienlieutieuhao = products.nhienlieutieuhao;
+    this.sochuyen = products.sochuyen;
+    this.hinhthucchothue = products.hinhthucchothue;
 }
 
 Products.get_all = (result) => {
-    db.query('SELECT * FROM products', (err, product) => {
-        if (err || product.lenght === 0) {
-            result(null);
-        } else {
-            result(product);
+    db.query(
+        'SELECT p.id_xe, p.hinhanh, p.tenxe, p.giaxe, p.hopso, p.sochuyen, p.hinhthucchothue, c.diachi FROM products p, custommer c WHERE p.id_khachhang = c.id_khachhang LIMIT 0,8',
+        (err, product) => {
+            if (err || product.lenght === 0) {
+                result(null);
+            } else {
+                result(product);
+            }
         }
-    });
+    );
 }
 
 Products.getById = (id, result) => {
-    db.query(`SELECT * FROM products WHERE id = ${id}`, (err, product) => {
-        if (err || product.lenght === 0) {
-            result(null);
-        } else {
-            result(product[0]);
+    db.query(
+        `SELECT * FROM products p, custommer c WHERE p.id_khachhang = c.id_khachhang AND id_xe = ${id}`,
+        (err, product) => {
+            if (err || product.lenght === 0) {
+                result(null);
+            } else {
+                result(product[0]);
+            }
         }
-    });
+    );
 }
 
 Products.create = (data, result) => {
     db.query('INSERT INTO products SET ?', data, (err, product) => {
         if (err) {
+            console.log('err', err);
             result(null);
         } else {
             result({id: product.insertId, ...data});
@@ -120,7 +136,7 @@ Products.create = (data, result) => {
 };
 
 Products.remove = (id, result) => {
-    db.query('DELETE FROM products WHERE id = ?', id, (err, product) => {
+    db.query('DELETE FROM products WHERE id_xe = ?', id, (err, product) => {
         if (err) {
             result(null);
         } else {

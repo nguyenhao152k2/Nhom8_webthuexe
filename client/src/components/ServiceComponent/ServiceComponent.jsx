@@ -53,52 +53,52 @@ export default class ServiceComp extends Component {
             ],
         };
         return (
-            <div class='service-section'>
-                <div class='container sv-slide p-60 bg-primary'>
-                    <h1 class='title text-center'>Dịch Vụ Của T4B.vn</h1>
+            <div className='service-section'>
+                <div className='container sv-slide p-60 bg-primary'>
+                    <h1 className='title text-center'>Dịch Vụ Của T4B.vn</h1>
                     {/* d-flex justify-content-between */}
-                    <div class='service-container d-flex justify-content-between pt-48 '>
-                        <div class='service-item '>
-                            <div class='service-item__img pb-5'>
+                    <div className='service-container d-flex justify-content-between pt-48 '>
+                        <div className='service-item '>
+                            <div className='service-item__img pb-5'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service1.e6ebc385.png'
                                     alt=''
                                 />
-                                <div class='service-item__content'>
-                                    <h1 class=''>
+                                <div className='service-item__content'>
+                                    <h1 className=''>
                                         Xe đã sẵn sàng.
                                         <br />
                                         Bắt đầu hành trình ngay!
                                     </h1>
-                                    <p class=''>
+                                    <p className=''>
                                         Tự tay cầm lái chiếc xe mà bạn yêu thích{' '}
                                         <br /> cho hành trình thêm hứng khởi.
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe tự lái
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class='service-item right float-end '>
-                            <div class='service-item__img pt-5'>
+                        <div className='service-item right float-end '>
+                            <div className='service-item__img pt-5'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service2.9df79c9f.png'
                                     alt=''
                                 />
-                                <div class='service-item__content text-end'>
-                                    <h1 class=''>Tài xế của bạn đã đến!</h1>
-                                    <p class=''>
+                                <div className='service-item__content text-end'>
+                                    <h1 className=''>Tài xế của bạn đã đến!</h1>
+                                    <p className=''>
                                         Chuyến đi thêm thú vị
                                         <br />
                                         cùng các bác tài 5* trên T4B.vn
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe có tài xế
                                     </a>
@@ -107,94 +107,94 @@ export default class ServiceComp extends Component {
                         </div>
                     </div>
                     <Slider {...settings}>
-                        {/* <div class='service-item'>
-                            <div class='service-item__img pb-5'>
+                        {/* <div className='service-item'>
+                            <div className='service-item__img pb-5'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service1.e6ebc385.png'
                                     alt=''
                                 />
-                                <div class='service-item__content'>
-                                    <h1 class=''>
+                                <div className='service-item__content'>
+                                    <h1 className=''>
                                         Xe đã sẵn sàng.
                                         <br />
                                         Bắt đầu hành trình ngay!
                                     </h1>
-                                    <p class=''>
+                                    <p className=''>
                                         Tự tay cầm lái chiếc xe mà bạn yêu thích{' '}
                                         <br /> cho hành trình thêm hứng khởi.
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe tự lái
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class='service-item right'>
-                            <div class='service-item__img'>
+                        <div className='service-item right'>
+                            <div className='service-item__img'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service2.9df79c9f.png'
                                     alt=''
                                 />
-                                <div class='service-item__content text-end'>
-                                    <h1 class=''>Tài xế của bạn đã đến!</h1>
-                                    <p class=''>
+                                <div className='service-item__content text-end'>
+                                    <h1 className=''>Tài xế của bạn đã đến!</h1>
+                                    <p className=''>
                                         Chuyến đi thêm thú vị
                                         <br />
                                         cùng các bác tài 5* trên T4B.vn
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe có tài xế
                                     </a>
                                 </div>
                             </div>
                         </div> */}
-                        <div class='service-item '>
-                            <div class='service-item__img'>
+                        <div className='service-item '>
+                            <div className='service-item__img'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service1.e6ebc385.png'
                                     alt=''
                                 />
-                                <div class='service-item__content'>
-                                    <h1 class=''>
+                                <div className='service-item__content'>
+                                    <h1 className=''>
                                         Xe đã sẵn sàng.
                                         <br />
                                         Bắt đầu hành trình ngay!
                                     </h1>
-                                    <p class=''>
+                                    <p className=''>
                                         Tự tay cầm lái chiếc xe mà bạn yêu thích{' '}
                                         <br /> cho hành trình thêm hứng khởi.
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe tự lái
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class='service-item right float-end '>
-                            <div class='service-item__img'>
+                        <div className='service-item right float-end '>
+                            <div className='service-item__img'>
                                 <img
                                     src='https://www.mioto.vn/static/media/service2.9df79c9f.png'
                                     alt=''
                                 />
-                                <div class='service-item__content text-end'>
-                                    <h1 class=''>Tài xế của bạn đã đến!</h1>
-                                    <p class=''>
+                                <div className='service-item__content text-end'>
+                                    <h1 className=''>Tài xế của bạn đã đến!</h1>
+                                    <p className=''>
                                         Chuyến đi thêm thú vị
                                         <br />
                                         cùng các bác tài 5* trên T4B.vn
                                     </p>
                                     <a
                                         href=''
-                                        class='btn-service btn btn-success '
+                                        className='btn-service btn btn-success '
                                     >
                                         Thuê xe có tài xế
                                     </a>

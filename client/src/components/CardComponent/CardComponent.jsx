@@ -1,70 +1,102 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
+import productApi from '../../api/productApi';
 // import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPage';
 
 
 const CardComponent = () => {
-    return (
-        <Link to='/product-details'>
-            {/* <div className='featured-item  col-xs col-md-6 col-lg-4'> */}
-                <div class='item-car card col-xxl-12'>
-                    <div class='item-box'>
-                        <div class='img-car'>
-                            <img
-                                class='card-img-top fix-img'
-                                src='https://n1-pstg.mioto.vn/cho_thue_xe_o_to_tu_lai_t…2022/p/g/2024/00/02/17/jXWHJH0JJpBNFZMwdfWyXw.jpg'
-                                alt=''
-                            />
+    const [productList, setProductList] = useState([]);
 
-                            <span class='label-pos'>
-                                <span class='rent'>Đặt xe nhanh</span>
-                                <span class='rent'>Miễn thế chấp</span>
-                            </span>
-                        </div>
-                        <div class='desc-car'>
-                            <div class='desc-tag'>
-                                <span class='tag-item'>Số tự động</span>
-                                <span class='tag-item'>Giao xe tận nơi</span>
+    useEffect(() => {
+        const fetchProductList = async () => {
+            try {
+                // const params = {
+                //     _page: 1,
+                //     _limit: 2,
+                //     params,
+                // };
+                const response = await productApi.getAll();
+                console.log(response);
+                setProductList(response.data);
+            } catch (err) {
+                console.log('Lấy danh sách dữ liệu sản phẩm thất bại:',err)
+            }
+        }
+        fetchProductList();
+        // (async () => {
+        //     const response = await productApi.getAll({ _page: 1, _limit: 2 });
+        //     console.log(response);
+        //     setProductList(response.data)
+        // })();
+    }, []);
+
+    return (
+        <>
+        {
+        
+            productList.map((product, index) => (
+                <Link to={`/product/${product.id_xe}`}>
+                    <div key={product.id_xe} className='item-car card col-xxl-12'>
+                        <div className='item-box'>
+                            <div className='img-car'>
+                                <img
+                                    className='card-img-top fix-img'
+                                    src={product.hinhanh}
+                                    alt=''
+                                />
+
+                                <span className='label-pos'>
+                                    <span className='rent'>Đặt xe nhanh</span>
+                                    <span className='rent'>Miễn thế chấp</span>
+                                </span>
                             </div>
-                            <div class='desc-name'>
-                                <p>Kia Morning 2022</p>
-                                <div class='wrap-icon'>
-                                    <i class='fa-solid fa-shield-halved'></i>
+                            <div className='desc-car'>
+                                <div className='desc-tag'>
+                                    <span className='tag-item'>{ product.hopso}</span>
+                                    <span className='tag-item'>{ product.hinhthucchothue}</span>
                                 </div>
-                            </div>
-                            <div class='desc-address'>
-                                <div class='wrap-icon'>
-                                    <i class='fa-solid fa-location-dot'></i>
+                                    <div className='desc-name'>
+                                        <p>{product.tenxe }</p>
+                                    <div className='wrap-icon'>
+                                        <i className='fa-solid fa-shield-halved'></i>
+                                    </div>
                                 </div>
-                                <p>Quận Hoàn Kiếm, Hà Nội</p>
-                            </div>
-                            <div class='hr'></div>
-                            <div class='desc-info-price'>
-                                <div class='info'>
-                                    <div class='wrap-icon'>
-                                        <i class='fa-solid fa-star'></i>
+                                <div className='desc-address'>
+                                    <div className='wrap-icon'>
+                                        <i className='fa-solid fa-location-dot'></i>
                                     </div>
-                                    <span class='info'>5.0</span>
-                                    <span class='dot'>
-                                        <i class='fa-solid fa-circle'></i>
-                                    </span>
-                                    <div class='wrap-icon'>
-                                        <i class='fa-solid fa-suitcase-rolling'></i>
-                                    </div>
-                                    <span class='info'>50 chuyến</span>
+                                    <p>{ product.diachi}</p>
                                 </div>
-                                <div class='wrap-price'>
-                                    <div class='price'>
-                                        <span class='price-special'>746K</span>
+                                <div className='hr'></div>
+                                <div className='desc-info-price'>
+                                    <div className='info'>
+                                        <div className='wrap-icon'>
+                                            <i className='fa-solid fa-star'></i>
+                                        </div>
+                                        <span className='info'>5.0</span>
+                                        <span className='dot'>
+                                            <i className='fa-solid fa-circle'></i>
+                                        </span>
+                                        <div className='wrap-icon'>
+                                            <i className='fa-solid fa-suitcase-rolling'></i>
+                                        </div>
+                                        <span className='info'>{product.sochuyen} chuyến</span>
                                     </div>
-                                    <div class='total-price'></div>
+                                    <div className='wrap-price'>
+                                        <div className='price'>
+                                            <span className='price-special'>{ product.giaxe}K / ngày</span>
+                                        </div>
+                                        <div className='total-price'></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            {/* </div> */}
-        </Link>
+            
+                </Link>
+            ))
+        }
+        </>
     );
 };
 

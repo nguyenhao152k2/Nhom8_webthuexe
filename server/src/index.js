@@ -36,7 +36,8 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 
-require ('./routes/ProductRoute')(app);
+require('./routes/ProductRoute')(app);
+require('./routes/OrderCarRoute')(app);
 // app.use("/api", productRoute);
 
 app.listen(3001, () => { 

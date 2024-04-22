@@ -43,27 +43,27 @@ export default class AdvantageComp extends Component {
             ],
         };
         return (
-            <div class='advantage'>
-                <div class='container adv-slide p-60'>
-                    <div class='advantage-title text-center'>
-                        <h1 class='title'>Ưu Điểm Của T4B</h1>
-                        <h5 class='sub-title pt-16'>
+            <div className='advantage'>
+                <div className='container adv-slide p-60'>
+                    <div className='advantage-title text-center'>
+                        <h1 className='title'>Ưu Điểm Của T4B</h1>
+                        <h5 className='sub-title pt-16'>
                             Những tính năng giúp bạn dễ dàng hơn khi thuê xe
                             trên Mioto
                         </h5>
                     </div>
-                    <div class='advantage-container row  g-5'>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                    <div className='advantage-container row  g-5'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features1.f177339e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     An tâm đặt xe
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Không tính phí huỷ chuyến trong vòng 1h sau
                                     khi đặt cọc.
                                     <br/>
@@ -72,82 +72,82 @@ export default class AdvantageComp extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features2.1e7cb1c7.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Thủ tục đơn giản
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Chỉ cần có CCCD gắn chip (Hoặc Passport) &
                                     Giấy phép lái xe là bạn đã đủ điều kiện thuê
                                     xe trên Mioto.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features3.735438af.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Thanh toán dễ dàng
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Đa dạng hình thức thanh toán: ATM, thẻ Visa
                                     & Ví điện tử (Momo, VnPay, ZaloPay).
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features4.ffd1319e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Giao xe tận nơi
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Bạn có thể lựa chọn giao xe tận nhà/sân
                                     bay... Phí tiết kiệm chỉ từ 15k/km.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features5.4035317e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Dòng xe đa dạng
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Hơn 100 dòng xe cho bạn tuỳ ý lựa chọn:
                                     Mini, Sedan, CUV, SUV, MPV, Bán tải.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features6.a6f7dc54.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Lái xe an toàn
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Vững tay lái với gói bảo hiểm thuê xe từ nhà
                                     bảo hiểm MIC & VNI.
                                 </p>
@@ -155,17 +155,17 @@ export default class AdvantageComp extends Component {
                         </div>
                     </div>
                     <Slider {...settings}>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features1.f177339e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     An tâm đặt xe
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Không tính phí huỷ chuyến trong vòng 1h sau
                                     khi đặt cọc. Hoàn cọc và bồi thường 100% nếu
                                     chủ xe huỷ chuyến trong vòng 7 ngày trước
@@ -173,82 +173,82 @@ export default class AdvantageComp extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features2.1e7cb1c7.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Thủ tục đơn giản
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Chỉ cần có CCCD gắn chip (Hoặc Passport) &
                                     Giấy phép lái xe là bạn đã đủ điều kiện thuê
                                     xe trên Mioto.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features3.735438af.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Thanh toán dễ dàng
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Đa dạng hình thức thanh toán: ATM, thẻ Visa
                                     & Ví điện tử (Momo, VnPay, ZaloPay).
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features4.ffd1319e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Giao xe tận nơi
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Bạn có thể lựa chọn giao xe tận nhà/sân
                                     bay... Phí tiết kiệm chỉ từ 15k/km.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features5.4035317e.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Dòng xe đa dạng
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Hơn 100 dòng xe cho bạn tuỳ ý lựa chọn:
                                     Mini, Sedan, CUV, SUV, MPV, Bán tải.
                                 </p>
                             </div>
                         </div>
-                        <div class='advantage-item col-lg-4 col-sm-6 '>
-                            <div class='item-adv card border-0'>
+                        <div className='advantage-item col-lg-4 col-sm-6 '>
+                            <div className='item-adv card border-0'>
                                 <img
                                     src='https://www.mioto.vn/static/media/features6.a6f7dc54.svg'
                                     alt=''
-                                    class='adv-img img-fluid mx-auto'
+                                    className='adv-img img-fluid mx-auto'
                                 />
-                                <h4 class='adv-title text-center'>
+                                <h4 className='adv-title text-center'>
                                     Lái xe an toàn
                                 </h4>
-                                <p class='adv-text text-center'>
+                                <p className='adv-text text-center'>
                                     Vững tay lái với gói bảo hiểm thuê xe từ nhà
                                     bảo hiểm MIC & VNI.
                                 </p>

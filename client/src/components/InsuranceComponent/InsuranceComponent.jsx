@@ -55,83 +55,83 @@ function InsuranceComp() {
         ],
     };
     return (
-        <div class='insurance-car'>
-            <div class='container insurance-slider p-60 bg-light'>
-                <div class='insurance-title text-center'>
-                    <h1 class='title'>Hành Trình Của Bạn Luôn Được Bảo Vệ</h1>
+        <div className='insurance-car'>
+            <div className='container insurance-slider p-60 bg-light'>
+                <div className='insurance-title text-center'>
+                    <h1 className='title'>Hành Trình Của Bạn Luôn Được Bảo Vệ</h1>
                 </div>
-                <div class='insurance-container row row-cols-xl-4 row-cols-xs-1 g-3 pt-48'>
-                    <a href='' class='insurance-item col-xl-3 col-xs-12'>
-                        <div class='item-ins card'>
+                <div className='insurance-container row row-cols-xl-4 row-cols-xs-1 g-3 pt-48'>
+                    <a href='' className='insurance-item col-xl-3 col-xs-12'>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/global-care.e4fc7ef6.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item col-xl-3 col-xs-12'>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item col-xl-3 col-xs-12'>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/mic.ad48f066.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item col-xl-3 col-xs-12'>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item col-xl-3 col-xs-12'>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/vni.d1b15e7a.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item col-xl-3 col-xs-12'>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item col-xl-3 col-xs-12'>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/pvi.cfd4805b.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
                 </div>
-                <Slider {...settings} className=''>
-                    <a href='' class='insurance-item '>
-                        <div class='item-ins card'>
+                <Slider {...settings} classNameName=''>
+                    <a href='' className='insurance-item '>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/global-care.e4fc7ef6.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item '>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item '>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/mic.ad48f066.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item '>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item '>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/vni.d1b15e7a.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
-                    <a href='' class='insurance-item '>
-                        <div class='item-ins card'>
+                    <a href='' className='insurance-item '>
+                        <div className='item-ins card'>
                             <img
                                 src='https://www.mioto.vn/static/media/pvi.cfd4805b.jpg'
                                 alt=''
-                                class='fix-img'
+                                className='fix-img'
                             />
                         </div>
                     </a>
