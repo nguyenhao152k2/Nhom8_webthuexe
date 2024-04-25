@@ -38,11 +38,24 @@ const get_list = (req, res) => {
     })
 };
 
+const get_list_admin = (req, res) => {
+    Products.get_all_admin((data) => {
+        res.send({ result: data });
+    })
+};
+
+const get_detail_admin = (req, res) => {
+    Products.getByIdAdmin(req.params.id, (data) => {
+        res.send({ result: data });
+    });
+}
+
 const get_detail = (req, res) => {
     Products.getById(req.params.id, (result) => {
         res.send({ _result: result });
     });
 }
+
 
 const add_product = (req, res) => { 
     var data = req.body;
@@ -68,6 +81,8 @@ const update_product = (req, res) => {
 module.exports = {
     get_list,
     get_detail,
+    get_list_admin,
+    get_detail_admin,
     add_product,
     remove_product,
     update_product,
