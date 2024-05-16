@@ -48,7 +48,7 @@ const MyTripComponent = () => {
     };
 
     const crrMyTrip = (data) => {
-        return data.map((trip) => (
+        return data?.map((trip) => (
             <>
                 <div key={trip.id_xe} class='card mb-3 w-100'>
                     {/* <p>{myTrip.id_xe}</p> */}
@@ -220,7 +220,7 @@ const MyTripComponent = () => {
                                         : 'trip-content'
                                 }
                             >
-                                {myTrip.length === 0 ? notMyTrip() : crrMyTrip(myTrip)}
+                                {myTrip?.length === 0 ? notMyTrip() : crrMyTrip(myTrip)}
                                 
                                 
                             </div>
@@ -232,7 +232,7 @@ const MyTripComponent = () => {
                                         : 'trip-content'
                                 }
                             >
-                                {historyTrip.length === 0
+                                {historyTrip?.length === 0
                                     ? notMyTrip()
                                     : crrMyTrip(historyTrip)}
                             </div>

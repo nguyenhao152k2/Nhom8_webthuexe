@@ -82,12 +82,8 @@ export default class HeaderComponent extends Component {
                                 <div className='hr nav-hr d-sm-block d-md-none'></div>
                                 {/* <li className='nav-item hr d-sm-block d-md-none'></li> */}
                                 <div className='account-btn'>
-                                    <a href='#' className='nav-link'>
-                                        Đăng ký
-                                    </a>
-                                    <a href='#' className='nav-link'>
-                                        Đăng nhập
-                                    </a>
+                                    <Link to={'/sign-up'} className='nav-link'>Đăng ký</Link>
+                                    <Link to={'/sign-in'} className='nav-link'>Đăng nhập</Link>
                                 </div>
                             </ul>
                         </div>

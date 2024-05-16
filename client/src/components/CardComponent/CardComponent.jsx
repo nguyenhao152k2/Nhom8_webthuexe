@@ -21,7 +21,7 @@ const CardComponent = () => {
 
     return (
         <>
-            {productList.map((product, index) => (
+            {productList?.map((product, index) => (
                 <Link
                     key={product.id}
                     to={`/product/${product.id_xe}`}
