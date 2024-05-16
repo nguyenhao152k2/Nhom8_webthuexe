@@ -127,7 +127,8 @@ nav .navbar-collapse {
 }
 
 .btn-search .btn {
-    width: 100%;
+    width: 80%;
+    height: 50px;
 }
 
 .car-option__icon {

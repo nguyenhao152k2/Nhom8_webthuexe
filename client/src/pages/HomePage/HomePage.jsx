@@ -17,9 +17,6 @@ const HomePage = () => {
               <div className='car-slide space pt-48'>
                   <div className='featured-container row row-cols-xxl-4 row-cols-xs-1 g-3'>
                       <CardComponent />
-                      <CardComponent />
-                      <CardComponent />
-                      <CardComponent />
                   </div>
               </div>
           </div>

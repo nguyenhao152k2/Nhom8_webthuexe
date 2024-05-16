@@ -1,0 +1,211 @@
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.space.sec {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.account-section {
+    background: #f6f6f6;
+}
+
+.space {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.account-section .account-container {
+    display: flex;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.account-section .account-container .sidebar-account {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    gap: 24px;
+    width: 30%;
+}
+
+.account-section .account-container .sidebar-account .sidebar-account-sticky {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    gap: 24px;
+}
+
+.account-section .account-container .sidebar-account .title {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+.account-section .account-container .sidebar-account .sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-section .account-container .sidebar-account .sidebar-item {
+    position: relative;
+    display: flex;
+    grid-gap: 8px;
+    gap: 8px;
+    padding: 16px;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.wrap-svg {
+    /* line-height: 0; */
+    -webkit-user-select: none;
+    user-select: none;
+    color: #000;
+}
+
+.account-section .account-container .sidebar-account .sidebar-item p {
+    font-size: 1rem;
+}
+
+.account-section .account-container .sidebar-account .dropdown-sidebar {
+    display: none;
+}
+
+.custom-dropdown {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    z-index: 3;
+}
+
+.account-section .account-container .sidebar-account .dropdown-sidebar .dropdown-selected {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.custom-dropdown .dropdown-selected {
+    position: relative;
+    padding: 8px 38px 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #d8dae5;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+}
+
+.account-section .account-container .content-account {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    gap: 24px;
+    width: calc(70% - 20px);
+}
+
+.account-section .account-container .content-account .content-title {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+    gap: 4px;
+}
+
+.account-section .account-container .content-account .mytrips-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-section .account-container .content-account .mytrips-mode .tab-mode {
+    max-width: unset;
+    min-width: 350px;
+}
+
+.account-section .account-container .content-account .tab-mode {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.account-section .account-container .content-account .tab-mode__item.active {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 4px solid #5fcf86;
+}
+
+.account-section .account-container .content-account .tab-mode__item {
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #767676;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.account-section .account-container .content-account .list-car {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.account-section .account-container .content-account .my-trips>div {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 24px;
+    gap: 24px;
+}
+
+.account-section .account-container .content-account .list-car .trip-content {
+    display: none;
+}
+
+.account-section .account-container .content-account .list-car .trip-content.active {
+    display: block;
+}
+
+.empty-container img {
+    width: 340px;
+}
+
+.empty-container p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #6f6f6f;
+    text-align: center;
+}
+
+.card-body .card-text {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 3px 10px !important;
+}

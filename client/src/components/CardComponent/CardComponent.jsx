@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import productApi from '../../api/productApi';
-// import ProductDetailsPage from '../pages/ProductDetailsPage/ProductDetailsPage';
-
+import './CarComp.css';
 
 const CardComponent = () => {
     const [productList, setProductList] = useState([]);
@@ -10,33 +9,25 @@ const CardComponent = () => {
     useEffect(() => {
         const fetchProductList = async () => {
             try {
-                // const params = {
-                //     _page: 1,
-                //     _limit: 2,
-                //     params,
-                // };
                 const response = await productApi.getAll();
                 console.log(response);
                 setProductList(response.data);
             } catch (err) {
-                console.log('Lấy danh sách dữ liệu sản phẩm thất bại:',err)
+                console.log('Lấy danh sách dữ liệu sản phẩm thất bại:', err);
             }
-        }
+        };
         fetchProductList();
-        // (async () => {
-        //     const response = await productApi.getAll({ _page: 1, _limit: 2 });
-        //     console.log(response);
-        //     setProductList(response.data)
-        // })();
     }, []);
 
     return (
         <>
-        {
-        
-            productList.map((product, index) => (
-                <Link to={`/product/${product.id_xe}`}>
-                    <div key={product.id_xe} className='item-car card col-xxl-12'>
+            {productList.map((product, index) => (
+                <Link
+                    key={product.id}
+                    to={`/product/${product.id_xe}`}
+                    className='item-car'
+                >
+                    <div key={product.id_xe} className='card col-xxl-12'>
                         <div className='item-box'>
                             <div className='img-car'>
                                 <img
@@ -52,11 +43,15 @@ const CardComponent = () => {
                             </div>
                             <div className='desc-car'>
                                 <div className='desc-tag'>
-                                    <span className='tag-item'>{ product.hopso}</span>
-                                    <span className='tag-item'>{ product.hinhthucchothue}</span>
+                                    <span className='tag-item'>
+                                        {product.hopso}
+                                    </span>
+                                    <span className='tag-item'>
+                                        {product.hinhthucchothue}
+                                    </span>
                                 </div>
-                                    <div className='desc-name'>
-                                        <p>{product.tenxe }</p>
+                                <div className='desc-name'>
+                                    <p>{product.tenxe}</p>
                                     <div className='wrap-icon'>
                                         <i className='fa-solid fa-shield-halved'></i>
                                     </div>
@@ -65,7 +60,7 @@ const CardComponent = () => {
                                     <div className='wrap-icon'>
                                         <i className='fa-solid fa-location-dot'></i>
                                     </div>
-                                    <p>{ product.diachi}</p>
+                                    <p>{product.diachi}</p>
                                 </div>
                                 <div className='hr'></div>
                                 <div className='desc-info-price'>
@@ -80,11 +75,15 @@ const CardComponent = () => {
                                         <div className='wrap-icon'>
                                             <i className='fa-solid fa-suitcase-rolling'></i>
                                         </div>
-                                        <span className='info'>{product.sochuyen} chuyến</span>
+                                        <span className='info'>
+                                            {product.sochuyen} chuyến
+                                        </span>
                                     </div>
                                     <div className='wrap-price'>
                                         <div className='price'>
-                                            <span className='price-special'>{ product.giaxe}K / ngày</span>
+                                            <span className='price-special'>
+                                                {product.giaxe}K / ngày
+                                            </span>
                                         </div>
                                         <div className='total-price'></div>
                                     </div>
@@ -92,10 +91,8 @@ const CardComponent = () => {
                             </div>
                         </div>
                     </div>
-            
                 </Link>
-            ))
-        }
+            ))}
         </>
     );
 };

@@ -3,6 +3,7 @@ import logo1 from '../../image/logo/logo1.png';
 import logo2 from '../../image/logo/logo2.png';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 // import '../css/Navbar.css';
 
 export default class HeaderComponent extends Component {
@@ -20,20 +21,20 @@ export default class HeaderComponent extends Component {
                     <div className='container '>
                         {/* Logo  */}
                         <div className='navbar-brand'>
-                            <a href='#' className='logo-img d-none d-lg-block'>
+                            <Link to={'/'} className='logo-img d-none d-lg-block'>
                                 <img
                                     src={logo1}
                                     alt='Logo'
                                     className='logo-lg'
                                 />
-                            </a>
-                            <a href='#' className='logo-img d-lg-none d-block'>
+                            </Link>
+                            <Link to={'/'} className='logo-img d-lg-none d-block'>
                                 <img
                                     src={logo2}
                                     alt='Logo con'
                                     className='logo-sm'
                                 />
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Nút bar thu nhỏ  */}
@@ -68,9 +69,9 @@ export default class HeaderComponent extends Component {
                                     </a>
                                 </li>
                                 <li className='nav-item'>
-                                    <a href='#' className='nav-link'>
-                                        Blog
-                                    </a>
+                                    <Link to={'/mytrip'} className='nav-link'>
+                                        Chuyến của tôi
+                                    </Link>
                                 </li>
                                 <li className='nav-item'>
                                     <a href='#' className='nav-link '>

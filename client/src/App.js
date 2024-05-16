@@ -1,24 +1,11 @@
-
-// import NavbarComp from './components/NavbarComp';
-// import ContentComp from './components/ContentComp';
-// import PromoComp from './components/PromoComp';
-// import CarComp from './components/CarComp';
-// import PlaceComp from './components/PlaceComp'; 
-// import AdvantageComp from './components/AdvantageComp';
-// import InsuranceComp from './components/InsuranceComp';
-// import ServiceComp from './components/ServiceComp';
-// import TutorialComp from './components/TutorialComp';
-// import ExplorerComp from './components/ExplorerComp';
-// import BlogComp from './components/BlogComp';
-// import FooterComp from './components/FooterComp';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { routes } from './router';
 import './App.css';
 import './components/HeaderComponent/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DefaultComponent from './components/DefaultComponent/DefaultComponent';
-import axios from 'axios';
+// import axios from 'axios';
 // import { Api } from './api/api.js';
 
 function App() {
@@ -41,7 +28,7 @@ function App() {
                     return (
                       <Route key = {route.path} path={route.path} element={
                         <Layout>
-                          <Page />
+                          <Page/>
                         
                         </Layout>
                       } />

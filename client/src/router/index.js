@@ -5,6 +5,7 @@ import ProductDetailsPage from "../pages/ProductDetailsPage/ProductDetailsPage";
 import ProductsPage from "../pages/ProductsPage/ProductsPage";
 import SignInPage from '../pages/SignInPage/SignInPage';
 import SignUpPage from '../pages/SignUpPage/SignUpPage';
+import MyTripPage from "../pages/MyTrip/MyTripPage";
 
 // tạo mảng chứa router
 export const routes = [
@@ -29,6 +30,12 @@ export const routes = [
     {
         path: '/product/:id',
         page: ProductDetailsPage,
+        isShowHeader: true,
+    },
+
+    {
+        path: '/mytrip',
+        page: MyTripPage,
         isShowHeader: true,
     },
 
