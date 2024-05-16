@@ -111,9 +111,35 @@ Products.get_all = (result) => {
     );
 }
 
+Products.get_all_admin = (result) => {
+    db.query(
+        'SELECT * from products join custommer on products.id_khachhang = custommer.id_khachhang',
+        (err, product) => {
+            if (err || product.lenght === 0) {
+                result(null);
+            } else {
+                result(product);
+            }
+        }
+    );
+}
+
+Products.getByIdAdmin = (id, result) => {
+    db.query(
+        `SELECT * FROM products WHERE id_xe = ${id}`,
+        (err, product) => {
+            if (err || product.lenght === 0) {
+                result(null);
+            } else {
+                result(product[0]);
+            }
+        }
+    );
+}
+
 Products.getById = (id, result) => {
     db.query(
-        `SELECT * FROM products p, custommer c WHERE p.id_khachhang = c.id_khachhang AND id_xe = ${id}`,
+        `SELECT * FROM products WHERE p.id_khachhang = c.id_khachhang AND id_xe = ${id}`,
         (err, product) => {
             if (err || product.lenght === 0) {
                 result(null);
@@ -125,12 +151,13 @@ Products.getById = (id, result) => {
 }
 
 Products.create = (data, result) => {
-    db.query('INSERT INTO products SET ?', data, (err, product) => {
+    db.query('INSERT INTO products SET id_khachhang=?, hinhanh=?, tenxe=?, socho=?, mota=?, giaxe=?, hopso=?, dungtich=?, nhienlieu=?, nhienlieutieuhao=?, sochuyen=?, hinhthucchothue=?', 
+    [data.id_khachhang, data.hinhanh, data.tenxe, data.socho, data.mota, data.giaxe, data.hopso, data.dungtich,
+        data.nhienlieu, data.nhienlieutieuhao, data.sochuyen, data.hinhthucchothue], (err, product) => {
         if (err) {
-            console.log('err', err);
-            result(null);
+            result(0);
         } else {
-            result({id: product.insertId, ...data});
+            result("Thêm sản phẩm thành công");
         }
     })
 };
@@ -146,11 +173,13 @@ Products.remove = (id, result) => {
 }
 
 Products.update = (data, result) => {
-    db.query('UPDATE products SET tenxe=?, socho=?, mota=? WHERE id=?', [data.tenxe, data.socho, data.mota, data.id], (err, product) => {
+    db.query('UPDATE products SET id_khachhang=?, hinhanh=?, tenxe=?, socho=?, mota=?, giaxe=?, hopso=?, dungtich=?, nhienlieu=?, nhienlieutieuhao=?, sochuyen=?, hinhthucchothue=? WHERE id_xe=?',
+     [data.id_khachhang, data.hinhanh, data.tenxe, data.socho, data.mota, data.giaxe, data.hopso, data.dungtich,
+        data.nhienlieu, data.nhienlieutieuhao, data.sochuyen, data.hinhthucchothue, data.id], (err, product) => {
         if (err) {
-            result(null);
+            result(0);
         } else {
-            result(data);
+            result("Cập nhập sản phẩm " + data.id + " thành công");
         }
     });
 };
