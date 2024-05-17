@@ -5,8 +5,9 @@ import ProductDetailsPage from "../pages/ProductDetailsPage/ProductDetailsPage";
 import ProductsPage from "../pages/ProductsPage/ProductsPage";
 import SignInPage from '../pages/SignInPage/SignInPage';
 import SignUpPage from '../pages/SignUpPage/SignUpPage';
+import IndexProduct from "../pages/Admin/Products/IndexProduct/IndexProduct";
+import UpdateProduct from "../pages/Admin/Products/UpdateProduct/UpdateProduct";
 import MyTripPage from "../pages/MyTrip/MyTripPage";
-
 // tạo mảng chứa router
 export const routes = [
     {
@@ -48,6 +49,18 @@ export const routes = [
     {
         path: '/sign-up',
         page: SignUpPage,
+        isShowHeader: true,
+    },
+
+    {
+        path: '/admin/products',
+        page: IndexProduct,
+        isShowHeader: true,
+    },
+
+    {
+        path: '/admin/products/detail/:id',
+        page: UpdateProduct,
         isShowHeader: true,
     },
 

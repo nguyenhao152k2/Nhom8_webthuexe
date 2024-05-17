@@ -10,7 +10,6 @@ const CardComponent = () => {
         const fetchProductList = async () => {
             try {
                 const response = await productApi.getAll();
-                console.log(response);
                 setProductList(response.data);
             } catch (err) {
                 console.log('Lấy danh sách dữ liệu sản phẩm thất bại:', err);

@@ -17,11 +17,15 @@
 // }
 
 module.exports = (router) => {
-    var { get_list, get_detail, add_product, remove_product, update_product} = require('../controllers/ProductController');
+    var { get_list, get_detail, get_list_admin, get_detail_admin, add_product, remove_product, update_product} = require('../controllers/ProductController');
 
     router.get('/api/products', get_list);
 
     router.get('/api/products/:id', get_detail);
+
+    router.get('/api/products-admin/:id', get_detail_admin);
+
+    router.get('/api/products-admin', get_list_admin);
 
     router.post('/api/products', add_product);
 

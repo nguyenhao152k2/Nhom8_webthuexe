@@ -162,18 +162,14 @@ span.dot {
 }
 
 @media (max-width: 576px) {
-    .featured-container {
-        display: none !important;
-    }
+    
     .car-slide .slick-slider {
         display: block;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .featured-container {
-        display: none !important;
-    }
+    
     .car-slide .slick-slider {
         display: block;
     }
