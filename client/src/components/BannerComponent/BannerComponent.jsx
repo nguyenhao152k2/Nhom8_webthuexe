@@ -1,8 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState  } from 'react';
+import productApi from '../../api/productApi';
+import { Link } from 'react-router-dom';
 // import '../css/Banner.css';
 
 
 function BannerComponent() {
+
+    const [productList, setProductList] = useState([]);
+    const [inputValue, setInputValue] = useState('');
+    const [foundProduct, setFoundProduct] = useState(null);
+
+    useEffect(() => {
+        const fetchProductList = async () => {
+            try {
+                const response = await productApi.getAll();
+                setProductList(response.data);
+                
+            } catch (err) {
+                console.log('Lấy danh sách dữ liệu sản phẩm thất bại:', err);
+            }
+        };
+        fetchProductList();
+    }, []);
+
+    const handleFocus = () => {
+        const searchFormResult = document.querySelector('.search-form-result');
+        if (searchFormResult) {
+            searchFormResult.style.display = 'block';
+        }
+    };
+
+    const handleInputChange = (event) => {
+        const searchFormResult = document.querySelector('.search-form-result');
+        setInputValue(event.target.value);
+        findProductByName(event.target.value);
+        if(event.target.value == "" || event.target.value == null || event.target.value == undefined){
+            if (searchFormResult) {
+                searchFormResult.style.display = 'none';
+            }
+        }else{
+            if (searchFormResult) {
+                searchFormResult.style.display = 'block';
+            }
+        }
+    };
+
+    const findProductByName = (name) => {
+        const product = productList.filter(item => item.tenxe.toLowerCase().includes(name.toLowerCase()));
+        setFoundProduct(product || null);
+        console.log(foundProduct);
+      };
+
     return (
         // Banner
         <div className='banner '>
@@ -38,10 +86,13 @@ function BannerComponent() {
                                 type='text'
                                 className='search-value form-control'
                                 placeholder='Nhập tên loại xe cần thuê'
+                                value={inputValue}
+                                onFocus={handleFocus}
+                                onInput={handleInputChange}                       
                             />
                         </div>
-                        <div className='vr vr-1 p-0'></div>
-                        <div className='search-form__item address col-xl '>
+                        {/* <div className='vr vr-1 p-0'></div> */}
+                        {/* <div className='search-form__item address col-xl '>
                             <p className='search-text '>Chọn thành phố</p>
                             <select
                                 class='form-select col-xl search-value'
@@ -51,11 +102,38 @@ function BannerComponent() {
                                 <option value='1'>Hà Nội</option>
                                 <option value='2'>Thành phố Hồ Chí Minh</option>
                             </select>
-                        </div>
-                        <div className='btn-search col-xl-2 col-lg-2 d-flex align-items-center justify-content-end'>
-                            <button type='button' className='btn btn-success'>
-                                Tìm xe
-                            </button>
+                        </div> */}
+                    </div>
+
+                    <div className='search-form-result'>
+                        <div className='search-form-result-content'>
+                            {foundProduct && foundProduct.length > 0 ? (
+                            <div>
+                                {foundProduct.map(product => (
+                                    <Link
+                                    key={product.id}
+                                    to={`/product/${product.id_xe}`}
+                                    className='item-car'
+                                >
+                                <div className='unit' key={product.id}>
+                                    <div className='nameProduct'>
+                                        <span>{product.tenxe}</span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <img
+                                                className='imageProduct'
+                                                src={product.hinhanh}
+                                            />
+                                        </span>
+                                    </div>                                 
+                                </div>
+                                </Link>
+                                ))}
+                            </div>
+                            ) : (
+                            <p>No product found.</p>
+                            )}
                         </div>
                     </div>
 

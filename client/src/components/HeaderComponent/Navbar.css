@@ -105,6 +105,7 @@ nav .navbar-collapse {
     margin: auto;
     top: 56px;
     border-radius: 16px;
+    flex-direction: column;
 }
 
 .search-text {
@@ -493,9 +494,6 @@ span.dot {
     /* Promo end */
 
     /* Car */
-    .featured-container {
-        display: none !important;
-    }
     .car-slide .slick-slider {
         display: block;
     }
@@ -633,9 +631,6 @@ span.dot {
     /* Promo end */
 
     /* Car */
-    .featured-container {
-        display: none !important;
-    }
     .car-slide .slick-slider {
         display: block;
     }
@@ -760,9 +755,6 @@ span.dot {
         height: 230px !important;
     }
 
-    .featured-container {
-        display: none !important;
-    }
     .car-slide .slick-slider {
         display: block;
     }

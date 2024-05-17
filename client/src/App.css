@@ -35,6 +35,7 @@ body {
 .item-car {
     text-decoration: none;
     padding: 0.6rem;
+    width: 300px!important;
 }
 
 .tag-item {
@@ -42,4 +43,27 @@ body {
     padding: 3px 8px;
     border-radius: 10px;
     background-color: #e9dff9;
+}
+
+.featured-container{
+    justify-content: space-around;
+}
+
+.search-form-result{
+    width: 100%;
+    border: 1px solid gainsboro;
+    display: none;
+}
+
+.search-form-result-content{
+
+}
+
+.imageProduct{
+    width: 80px;
+}
+
+.unit{
+    padding: 10px;
+    border-top: 1px solid sandybrown;
 }
