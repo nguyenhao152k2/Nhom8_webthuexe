@@ -51,12 +51,8 @@ body {
 
 .search-form-result{
     width: 100%;
-    border: 1px solid gainsboro;
+    border-radius: 16px;
     display: none;
-}
-
-.search-form-result-content{
-
 }
 
 .imageProduct{
@@ -64,6 +60,7 @@ body {
 }
 
 .unit{
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
     border-top: 1px solid sandybrown;
 }

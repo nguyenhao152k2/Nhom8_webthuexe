@@ -114,17 +114,33 @@ function BannerComponent() {
                                     key={product.id}
                                     to={`/product/${product.id_xe}`}
                                     className='item-car'
+                                    style={{
+                                        color: 'black'
+                                    }}
                                 >
                                 <div className='unit' key={product.id}>
                                     <div className='nameProduct'>
                                         <span>{product.tenxe}</span>
                                     </div>
-                                    <div>
-                                        <span>
+                                    <div style={{
+                                        display: 'flex',
+                                        marginTop: '5px'
+                                    }}>
+                                        <span style={{
+                                            marginRight: '5px'
+                                        }}>
                                             <img
                                                 className='imageProduct'
                                                 src={product.hinhanh}
                                             />
+                                        </span>
+                                        <span>
+                                            <div>
+                                                Địa chỉ: {product.diachi}
+                                            </div>
+                                            <div>
+                                                Giá: {product.giaxe}
+                                            </div>
                                         </span>
                                     </div>                                 
                                 </div>
@@ -132,7 +148,9 @@ function BannerComponent() {
                                 ))}
                             </div>
                             ) : (
-                            <p>No product found.</p>
+                            <span style={{
+                                marginLeft: '10px'
+                            }}>No product found.</span>
                             )}
                         </div>
                     </div>

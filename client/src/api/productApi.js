@@ -25,7 +25,7 @@ const productApi = {
     // },
 
     getById: (id) => {
-        const url = `/products/${id}`;
+        const url = `/products-admin/${id}`;
         return axiosClient.get(url);
     },
 };

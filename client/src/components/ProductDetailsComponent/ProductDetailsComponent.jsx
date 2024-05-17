@@ -53,9 +53,9 @@ const ProductDetailsComponent = () => {
         const fetchProductDetail = async () => {
             try {
                 const response = await productApi.getById(id);
-                console.log(response._result);
+                console.log(response);
                 
-                setProductDetail(response._result);
+                setProductDetail(response);
             } catch (err) {
                 console.log('Lấy dữ liệu sản phẩm thất bại:', err);
             }
